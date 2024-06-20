@@ -6,6 +6,10 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
+-- my fav key maps
+keymap.set("n", "<leader>s", "<cmd>w<CR>", { desc = "save the current file" })
+keymap.set("n", "<leader>sa", "<cmd>wa<CR>", { desc = "save all the files" })
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
