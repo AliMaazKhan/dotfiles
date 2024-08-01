@@ -1,0 +1,6 @@
+modmap:
+  - name: Except Chrome
+    application:
+      not: Google-chrome
+    remap:
+      CapsLock: leftctrl
