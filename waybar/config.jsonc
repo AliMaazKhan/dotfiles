@@ -238,5 +238,12 @@
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate"
     }
+  },
+
+  "style": {
+    "font-family": "JetBrainsMono Nerd Font",    // Set your desired font here
+    "font-size": "12px",                 // Set the font size
+    "background": "#1e1e2e",
+    "foreground": "#cdd6f4"
   }
 }
