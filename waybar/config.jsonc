@@ -6,48 +6,49 @@
   // "width": 1280, // Waybar width
   "spacing": 8, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": [
+  "modules-center": [
     "hyprland/workspaces",
     "hyprland/mode",
     "hyprland/scratchpad",
     "custom/media"
   ],
-  "modules-center": [
-    "hyprland/window"
-  ],
-  "modules-right": [
+
+  "modules-left": [
     "mpd",
-    "idle_inhibitor",
+    "custom/google",
+    "custom/telegram"
+  ],
+ 
+  "modules-right": [
     "pulseaudio",
-    "network",
-    "power-profiles-daemon",
     "cpu",
     "memory",
-    "temperature",
+    "custom/date",
     "backlight",
     "keyboard-state",
-    "sway/language",
     "battery",
     "battery#bat2",
     "clock",
+    "date",
     "tray",
     "custom/power"
   ],
+
   // Modules configuration
   "hyprland/workspaces": {
-    "disable-scroll": true,
+    "disable-scroll": false,
     "all-outputs": true,
     "warp-on-scroll": false,
-    "format": "{name}: {icon}",
+    "format": "{icon}",
     "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "urgent": "",
-      "focused": "",
-      "default": ""
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
     }
   },
   "keyboard-state": {
@@ -62,6 +63,9 @@
   "hyprland/mode": {
     "format": "<span style=\"italic\">{}</span>"
   },
+
+
+
   "hyprland/scratchpad": {
     "format": "{icon} {count}",
     "show-empty": false,
@@ -109,17 +113,13 @@
     // "icon-size": 21,
     "spacing": 10
   },
-  "clock": {
-    // "timezone": "America/New_York",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
-  },
+
   "cpu": {
-    "format": "{usage}% ",
+    "format": "{usage}% \udb80\udf5b",
     "tooltip": false
   },
   "memory": {
-    "format": "{}% "
+    "format": "{}% \uefc5"
   },
   "temperature": {
     // "thermal-zone": 2,
@@ -198,7 +198,7 @@
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
+    "format-source": "{volume}% \ued03",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
@@ -239,11 +239,38 @@
       "hibernate": "systemctl hibernate"
     }
   },
+    "custom/date": {
+        "exec": "date '+%a, %b %d'",
+        "interval": 60,
+        "return-type": "text",
+        "format": "{}",
+        "tooltip": false
+    },
+
+  "clock": {
+        "format": "{:%I:%M %p}"
+  },
 
   "style": {
     "font-family": "JetBrainsMono Nerd Font",    // Set your desired font here
     "font-size": "12px",                 // Set the font size
     "background": "#1e1e2e",
     "foreground": "#cdd6f4"
+  },
+
+  "custom/google": {
+        "exec": "echo '\uf268'",
+        "return-type": "text",
+        "tooltip": false,
+        "on-click": "xdg-open https://www.google.com",
+        "format": "{}"
+    },
+
+  "custom/telegram": {
+    "exec": "echo '\uf2c6'",
+    "on-click": "/home/alimaaz/.dotfiles/scripts/launch_telegram.sh",
+    "interval": 1,
+    "format": "{}"
   }
+
 }
