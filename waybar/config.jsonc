@@ -16,7 +16,8 @@
   "modules-left": [
     "mpd",
     "custom/google",
-    "custom/telegram"
+    "custom/telegram",
+    "custom/youtube"
   ],
  
   "modules-right": [
@@ -110,7 +111,7 @@
     }
   },
   "tray": {
-    // "icon-size": 21,
+    "icon-size": 21,
     "spacing": 10
   },
 
@@ -248,7 +249,9 @@
     },
 
   "clock": {
-        "format": "{:%I:%M %p}"
+        "format": "{:%I:%M %p}",
+        "timezone": "localtime",
+        "tooltip": false
   },
 
   "style": {
@@ -269,6 +272,13 @@
   "custom/telegram": {
     "exec": "echo '\uf2c6'",
     "on-click": "/home/alimaaz/.dotfiles/scripts/launch_telegram.sh",
+    "interval": 1,
+    "format": "{}"
+  },
+
+  "custom/youtube": {
+    "exec": "echo '\uf16a'",
+    "on-click": "/home/alimaaz/.dotfiles/scripts/youtube_launch.sh",
     "interval": 1,
     "format": "{}"
   }

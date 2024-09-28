@@ -22,7 +22,7 @@ return {
 			cmd = {
 				"mono",
 				"--assembly-loader=strict",
-				"/home/alimaaz/.bin/omnisharp-linux-x64/omnisharp/OmniSharp.exe",
+				"/home/alimaaz/.bin/omnisharp/OmniSharp.exe",
 			},
 			use_mono = true,
 		})
