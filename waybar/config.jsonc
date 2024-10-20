@@ -17,7 +17,8 @@
     "mpd",
     "custom/google",
     "custom/telegram",
-    "custom/youtube"
+    "custom/youtube",
+    "custom/spotify"
   ],
  
   "modules-right": [
@@ -281,6 +282,16 @@
     "on-click": "/home/alimaaz/.dotfiles/scripts/youtube_launch.sh",
     "interval": 1,
     "format": "{}"
+  },
+  
+  "custom/spotify": {
+    "exec": "playerctl metadata --format '{{ artist }} - {{ title }}'",
+    "interval": 1,
+    "tooltip": false,
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "max-length": 30,
+    "escape": true
   }
-
 }

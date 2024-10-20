@@ -117,3 +117,5 @@ HISTTIMEFORMAT="%d/%m/%y %T "
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="/var/lib/snapd/snap/bin:$PATH"
+export PATH="/usr/bin/dotnet:$PATH"
+export PATH="$HOME/.dotnet/tools:$PATH"
