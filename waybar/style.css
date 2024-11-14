@@ -234,3 +234,10 @@ window#waybar {
 #custom-spotify:hover {
   background-color: #1ed760; /* Slightly lighter green on hover */
 }
+
+#custom-mediabuttonleft,
+#custom-mediabuttonright {
+  color: #ffffff;
+  background-color: rgba(24, 26, 27, 0.8);
+  font-size: 10px;
+}

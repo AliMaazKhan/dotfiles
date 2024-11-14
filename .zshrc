@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
@@ -110,8 +110,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$PATH:/home/alimaaz/.cargo/bin"
-export QT_QPA_PLATFORMTHEME="qt5ct"
-export QT_STYLE_OVERRIDE="qt5ct"
 HISTTIMEFORMAT="%d/%m/%y %T "
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -119,3 +117,7 @@ HISTTIMEFORMAT="%d/%m/%y %T "
 export PATH="/var/lib/snapd/snap/bin:$PATH"
 export PATH="/usr/bin/dotnet:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme

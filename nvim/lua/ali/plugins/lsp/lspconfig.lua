@@ -18,15 +18,6 @@ return {
 
 		local keymap = vim.keymap -- for conciseness
 
-		require("lspconfig").omnisharp.setup({
-			cmd = {
-				"mono",
-				"--assembly-loader=strict",
-				"/home/alimaaz/.bin/omnisharp/OmniSharp.exe",
-			},
-			use_mono = true,
-		})
-
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 			callback = function(ev)

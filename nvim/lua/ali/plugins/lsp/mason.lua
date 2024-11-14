@@ -21,12 +21,17 @@ return {
 					package_uninstalled = "✗",
 				},
 			},
+			auto_update = false,
+			run_on_start = true,
+			start_delay = 3000,
+			debounce_hours = 5,
 		})
 
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
-				"tsserver",
+				"ts_ls",
+				"clangd",
 				"html",
 				"cssls",
 				"tailwindcss",
