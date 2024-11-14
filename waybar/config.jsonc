@@ -285,7 +285,7 @@
     "exec" : "$HOME/.config/scripts/media_player.sh",
     "interval": 1,
     "on-click": "playerctl play-pause",
-    "max-length": 5,
+    "max-length": 2,
     "escape": true
   },
 
