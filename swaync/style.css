@@ -1,0 +1,22 @@
+:root {
+  --background: #1e1e2e; /* Mocha base */
+  --surface: #313244; /* Mocha surface0 */
+  --border: #585b70; /* Mocha surface2 */
+  --text: #c6d0f5; /* Mocha text */
+  --accent: #89b4fa; /* Mocha blue accent */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.notification {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.notification .title {
+  color: var(--accent);
+}
