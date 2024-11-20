@@ -117,4 +117,5 @@ HISTTIMEFORMAT="%d/%m/%y %T "
 export PATH="/var/lib/snapd/snap/bin:$PATH"
 export PATH="/usr/bin/dotnet:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
-wal -R
+
+

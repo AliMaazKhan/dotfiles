@@ -304,7 +304,7 @@
 
   "custom/reloadtheme": {
     "exec": "echo T",
-    "on-click": "$HOME/.config/scripts/reloadalltheme.sh"
+    "on-click": "$HOME/.config/scripts/wallpaper_selector.sh"
   },
 
   
