@@ -7,8 +7,8 @@
 }
 
 window#waybar {
-  background-color: rgba(24, 25, 37, 0); /* Darker background */
-  color: @color8; /* Softer off-white text */
+  background-color: rgba(24, 25, 37, 0.9); /* Darker background */
+  color: #d8d8f3; /* Softer off-white text */
   padding-left: 10px;
   transition: background-color 0.5s;
   border-radius: 8px;
@@ -19,7 +19,7 @@ window#waybar {
 .modules-left {
   margin-top: 2px;
   padding: 2px;
-  background-color: @background; /* Darker background for modules */
+  background-color: rgba(30, 32, 46, 0.9); /* Darker background for modules */
   border-radius: 8px;
 }
 
@@ -32,21 +32,21 @@ window#waybar {
   margin-right: 2px;
   border-radius: 15px;
   border: none;
-  background-color: @background; /* Dark background */
-  color: @foreground;
+  background-color: rgba(40, 42, 58, 0.9); /* Dark background */
+  color: #d8d8f3;
 }
 
 #workspaces button:hover {
-  background-color: @color15; /* Subdued lavender hover effect */
+  background-color: #9fa3c1; /* Subdued lavender hover effect */
 }
 
 #workspaces button.active {
-  background-color: @color5; /* Deep blue for active workspace */
-  color: @foreground;
+  background-color: #7289da; /* Deep blue for active workspace */
+  color: #ffffff;
 }
 
 #workspaces button.focused {
-  background-color: @color2; /* Softer pink for focused workspace */
+  background-color: #eb6f92; /* Softer pink for focused workspace */
   color: #ffffff;
 }
 
@@ -74,8 +74,8 @@ window#waybar {
 #mpd {
   padding: 0 6px;
   border-radius: 10px;
-  background-color: @background-color; /* Dark background */
-  color: #ffffff;
+  background-color: rgba(40, 42, 59, 0.9); /* Dark background */
+  color: #d8d8f3;
 }
 
 #battery {
@@ -101,15 +101,15 @@ window#waybar {
 }
 
 #cpu {
-  background-color: @color4; /* Soft blue for CPU */
+  background-color: #5b8fdf; /* Soft blue for CPU */
 }
 
 #memory {
-  background-color: @color14; /* Dusty purple for memory */
+  background-color: #b49fdb; /* Dusty purple for memory */
 }
 
 #disk {
-  background-color: @color11; /* Muted brown for disk */
+  background-color: #9e6a52; /* Muted brown for disk */
 }
 
 #backlight {
@@ -125,7 +125,7 @@ window#waybar {
 }
 
 #pulseaudio {
-  background-color: @color5; /* Soft purple for sound */
+  background-color: #6c6bf5; /* Soft purple for sound */
   color: #ffffff;
 }
 
@@ -135,7 +135,7 @@ window#waybar {
 }
 
 #tray {
-  background-color: @color6; /* Muted teal for tray */
+  background-color: #8ac69c; /* Muted teal for tray */
 }
 
 /* Custom modules */
@@ -148,29 +148,29 @@ window#waybar {
   padding-right: 9px;
   margin-right: 5px;
   background-color: rgba(40, 42, 59, 0.9);
-  color: #ffffff;
+  color: #d8d8f3;
 }
 
 #custom-date {
-  background-color: @color13; /* Soft purple for date */
+  background-color: #8f6ed7; /* Soft purple for date */
 }
 
 #custom-google {
-  background-color: @color12; /* Muted blue for Google */
+  background-color: #4a90e2; /* Muted blue for Google */
 }
 
 #custom-telegram {
-  background-color: @color4; /* Muted blue for Telegram */
+  background-color: #5c79d9; /* Muted blue for Telegram */
 }
 
 #custom-youtube {
-  background-color: @color10; /* Red for YouTube */
+  background-color: #f28fad; /* Red for YouTube */
 }
 
 /* Clock styling */
 #clock {
-  background-color: @color8; /* Darker gray */
-  color: #ffffff; /* Light gray for contrast */
+  background-color: #444b61; /* Darker gray */
+  color: #e4e9f3; /* Light gray for contrast */
   padding: 2px 5px;
   border-radius: 10px;
 }

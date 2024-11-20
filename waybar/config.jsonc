@@ -20,7 +20,8 @@
     "custom/youtube",
     "custom/mediabuttonleft",
     "custom/spotify",
-    "custom/mediabuttonright"
+    "custom/mediabuttonright",
+    "custom/reloadtheme"
   ],
  
   "modules-right": [
@@ -248,7 +249,7 @@
 
   "clock": {
         "format": "{:%I:%M %p}",
-        "timezone": "localtime",
+        "timezone": "Asia/Kolkata",
         "tooltip": false
   },
 
@@ -299,6 +300,11 @@
     "exec": "echo \udb81\udcad",
     "tooltip": false,
     "on-click": "playerctl next"
+  },
+
+  "custom/reloadtheme": {
+    "exec": "echo T",
+    "on-click": "$HOME/.config/scripts/reloadalltheme.sh"
   },
 
   

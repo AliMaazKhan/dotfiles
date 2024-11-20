@@ -70,7 +70,7 @@ return {
 
 		require("lualine").setup({
 			options = {
-				theme = "gruvbox-material",
+				theme = "pywal-nvim",
 			},
 		})
 	end,
