@@ -47,3 +47,4 @@ wal -i "$selected_wallpaper"
 
 echo "Wallpaper changed to $selected_wallpaper"
 
+killall waybar && waybar
