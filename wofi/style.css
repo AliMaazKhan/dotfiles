@@ -1,0 +1,23 @@
+window {
+    background-color: #101213;
+    color: #9A898C;
+}
+
+#input {
+    background-color: #8EC17C;
+    color: #9A898C;
+}
+
+#input:focus {
+    background-color: #89AA91;
+}
+
+#list {
+    background-color: #8EC17C;
+    color: #9A898C;
+}
+
+#list:selected {
+    background-color: #89AA91;
+    color: #101213;
+}

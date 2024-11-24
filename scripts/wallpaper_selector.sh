@@ -48,3 +48,4 @@ wal -i "$selected_wallpaper"
 echo "Wallpaper changed to $selected_wallpaper"
 
 killall waybar && waybar
+/home/alimaaz/dotfiles/scripts/wofi_style.sh

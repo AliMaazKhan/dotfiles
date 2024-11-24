@@ -26,3 +26,5 @@ hyprctl hyprpaper wallpaper "VGA-1,$wall"
 wal -c
 wal -i "$wall"
 
+
+/home/alimaaz/.dotfiles/scripts/wofi_style.sh
