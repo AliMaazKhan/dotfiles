@@ -115,3 +115,4 @@ export PATH="/usr/bin/dotnet:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
 
 catnap
+export MANPAGER='nvim +Man!'

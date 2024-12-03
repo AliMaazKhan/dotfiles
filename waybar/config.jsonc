@@ -20,8 +20,7 @@
     "custom/youtube",
     "custom/mediabuttonleft",
     "custom/spotify",
-    "custom/mediabuttonright",
-    "custom/reloadtheme"
+    "custom/mediabuttonright"
   ],
  
   "modules-right": [
@@ -310,6 +309,7 @@
   
   "bluetooth": {
 	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+  "on-click": "bluetoothctl connected CB:39:FB:71:AF:86",
 	"format": " {status}",
 	"format-disabled": "", // an empty format will hide the module
 	"format-connected": " {num_connections} connected",
