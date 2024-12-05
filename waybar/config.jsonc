@@ -15,6 +15,7 @@
 
   "modules-left": [
     "mpd",
+    "custom/video_record",
     "custom/google",
     "custom/telegram",
     "custom/youtube",
@@ -306,6 +307,14 @@
     "on-click": "$HOME/.config/scripts/wallpaper_selector.sh"
   },
 
+  "custom/video_record": {
+    "exec": "echo ",
+    "tooltip": false,
+    "on-click": "~/.dotfiles/scripts/record_video.sh",
+    "on-click-middle": "pkill -f wf-recorder"
+},
+
+
   
   "bluetooth": {
 	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
@@ -317,4 +326,5 @@
 	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
   }
+
 }

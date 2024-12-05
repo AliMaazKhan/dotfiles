@@ -84,12 +84,12 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+#Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='nvim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -102,9 +102,17 @@ source $ZSH/oh-my-zsh.sh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
+# Keybingings
+
+#
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+#
+#
+#
+# EXPORTS
 export PATH="$PATH:/home/alimaaz/.cargo/bin"
 HISTTIMEFORMAT="%d/%m/%y %T "
 
@@ -113,6 +121,5 @@ HISTTIMEFORMAT="%d/%m/%y %T "
 export PATH="/var/lib/snapd/snap/bin:$PATH"
 export PATH="/usr/bin/dotnet:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
-
-catnap
 export MANPAGER='nvim +Man!'
+
