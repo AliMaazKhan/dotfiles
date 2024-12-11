@@ -85,6 +85,7 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+
 			["svelte"] = function()
 				-- configure svelte server
 				lspconfig["svelte"].setup({
@@ -123,6 +124,15 @@ return {
 					},
 				})
 			end,
+
+			require("lspconfig").omnisharp.setup({
+				cmd = {
+					"mono",
+					"--assembly-loader=strict",
+					"/home/alimaaz/.bin/run",
+				},
+				use_mono = false,
+			}),
 
 			["lua_ls"] = function()
 				-- configure lua server (with special settings)

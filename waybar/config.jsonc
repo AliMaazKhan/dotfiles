@@ -12,7 +12,6 @@
     "hyprland/scratchpad",
     "custom/media"
   ],
-
   "modules-left": [
     "mpd",
     "custom/video_record",
@@ -23,15 +22,12 @@
     "custom/spotify",
     "custom/mediabuttonright"
   ],
- 
   "modules-right": [
     "pulseaudio",
     "cpu",
     "memory",
     "custom/date",
-    "backlight",
     "bluetooth",
-    "keyboard-state",
     "battery",
     "battery#bat2",
     "clock",
@@ -39,7 +35,6 @@
     "tray",
     "custom/power"
   ],
-
   // Modules configuration
   "hyprland/workspaces": {
     "disable-scroll": false,
@@ -69,9 +64,6 @@
   "hyprland/mode": {
     "format": "<span style=\"italic\">{}</span>"
   },
-
-
-
   "hyprland/scratchpad": {
     "format": "{icon} {count}",
     "show-empty": false,
@@ -119,9 +111,8 @@
     "icon-size": 21,
     "spacing": 10
   },
-
   "cpu": {
-    "format": "{usage}% \udb80\udf5b",
+    "format": "\udb80\udf5b {usage}% ",
     "tooltip": false
   },
   "memory": {
@@ -234,97 +225,82 @@
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   },
   "custom/power": {
-    "exec":"echo ⏻ ",
+    "exec": "echo ⏻ ",
     "tooltip": false,
     "on-click": "$HOME/.config/scripts/power_menu.sh"
-  
   },
-    "custom/date": {
-        "exec": "date '+%a, %b %d'",
-        "interval": 60,
-        "return-type": "text",
-        "format": "{}",
-        "tooltip": true
-    },
-
+  "custom/date": {
+    "exec": "date '+%a, %b %d'",
+    "interval": 60,
+    "return-type": "text",
+    "format": "{}",
+    "tooltip": true
+  },
   "clock": {
-        "format": "{:%I:%M %p}",
-        "timezone": "Asia/Kolkata",
-        "tooltip": false
+    "format": "{:%I:%M %p}",
+    "timezone": "Asia/Kolkata",
+    "tooltip": false
   },
-
   "style": {
-    "font-family": "JetBrainsMono Nerd Font",    // Set your desired font here
-    "font-size": "12px",                 // Set the font size
+    "font-family": "JetBrainsMono Nerd Font", // Set your desired font here
+    "font-size": "12px", // Set the font size
     "background": "#1e1e2e",
     "foreground": "#cdd6f4"
   },
-
   "custom/google": {
-        "exec": "echo '\uf268'",
-        "return-type": "text",
-        "tooltip": false,
-        "on-click": "xdg-open https://www.google.com",
-        "format": "{}"
-    },
-
+    "exec": "echo '\uf268'",
+    "return-type": "text",
+    "tooltip": false,
+    "on-click": "xdg-open https://www.google.com",
+    "format": "{}"
+  },
   "custom/telegram": {
     "exec": "echo '\uf2c6'",
     "on-click": "/home/alimaaz/.dotfiles/scripts/launch_telegram.sh",
     "interval": 1,
     "format": "{}"
   },
-
   "custom/youtube": {
     "exec": "echo '\uf16a'",
     "on-click": "/home/alimaaz/.dotfiles/scripts/youtube_launch.sh",
     "interval": 1,
     "format": "{}"
   },
-  
   "custom/spotify": {
-    "exec" : "$HOME/.config/scripts/media_player.sh",
+    "exec": "$HOME/.config/scripts/media_player.sh",
     "interval": 1,
     "on-click": "playerctl play-pause",
     "max-length": 2,
     "escape": true
   },
-
   "custom/mediabuttonleft": {
     "exec": "echo \udb81\udcae",
     "tooltip": false,
     "on-click": "playerctl previous"
   },
-
   "custom/mediabuttonright": {
     "exec": "echo \udb81\udcad",
     "tooltip": false,
     "on-click": "playerctl next"
   },
-
   "custom/reloadtheme": {
     "exec": "echo T",
     "on-click": "$HOME/.config/scripts/wallpaper_selector.sh"
   },
-
   "custom/video_record": {
     "exec": "echo ",
     "tooltip": false,
     "on-click": "~/.dotfiles/scripts/record_video.sh",
     "on-click-middle": "pkill -f wf-recorder"
-},
-
-
-  
+  },
   "bluetooth": {
-	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
-  "on-click": "bluetoothctl connected CB:39:FB:71:AF:86",
-	"format": " {status}",
-	"format-disabled": "", // an empty format will hide the module
-	"format-connected": " {num_connections} connected",
-	"tooltip-format": "{controller_alias}\t{controller_address}",
-	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+    "on-click": "bluetoothctl connected CB:39:FB:71:AF:86",
+    "format": " {status}",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": " {num_connections} connected",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
   }
-
 }

@@ -1,5 +1,4 @@
 #!/bin/bash
 
-cd ~/.cargo/bin/
 
-sudo ./xremap ~/.config/xremap/config.yml
+sudo xremap ~/.config/xremap/config.yml
