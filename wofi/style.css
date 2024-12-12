@@ -1,23 +1,23 @@
 window {
-    background-color: #0d0d2d;
-    color: #5091CB;
+    background-color: #0A0B16;
+    color: #F0611F;
 }
 
 #input {
-    background-color: #CE72A2;
-    color: #5091CB;
+    background-color: #D92F23;
+    color: #F0611F;
 }
 
 #input:focus {
-    background-color: #F6A1A8;
+    background-color: #F59123;
 }
 
 #list {
-    background-color: #CE72A2;
-    color: #5091CB;
+    background-color: #D92F23;
+    color: #F0611F;
 }
 
 #list:selected {
-    background-color: #F6A1A8;
-    color: #0d0d2d;
+    background-color: #F59123;
+    color: #0A0B16;
 }

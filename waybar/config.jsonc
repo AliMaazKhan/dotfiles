@@ -288,9 +288,11 @@
     "on-click": "$HOME/.config/scripts/wallpaper_selector.sh"
   },
   "custom/video_record": {
-    "exec": "echo ",
+    "exec": "$HOME/.dotfiles/scripts/recording_status.sh",
+    "interval": 1,
+    "return-type": "json",
     "tooltip": false,
-    "on-click": "~/.dotfiles/scripts/record_video.sh",
+    "on-click": "$HOME/.dotfiles/scripts/record_video.sh",
     "on-click-middle": "pkill -f wf-recorder"
   },
   "bluetooth": {
