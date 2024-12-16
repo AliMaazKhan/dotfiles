@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #  ██╗    ██╗ █████╗ ██╗     ██╗     ██████╗  █████╗ ██████╗ ███████╗██████╗
 #  ██║    ██║██╔══██╗██║     ██║     ██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
@@ -21,8 +20,7 @@
 
 
 # Set some variables
-wall_dir="${HOME}/Pictures/wallpaper"
-mkdir -p "${HOME}/.cache/jp/${theme}"
+wall_dir="/home/alimaaz/Pictures/wallpaper"
 cacheDir="${HOME}/.cache/jp/${theme}"
 rofi_command="rofi -x11 -dmenu -theme ${HOME}/.config/rofi/wallSelect.rasi -theme-str ${rofi_override}"
 
@@ -54,7 +52,9 @@ wall_selection=$(find "${wall_dir}"  -maxdepth 1  -type f \( -iname "*.jpg" -o -
 
 # Set the wallpaper
 [[ -n "$wall_selection" ]] || exit 1
+echo "Setting wallpaper to $wall_dir/$wall_selection"
 swww img ${wall_dir}/${wall_selection}
+wal -i ${wall_dir}/${wall_selection}
 
 exit 0
 
