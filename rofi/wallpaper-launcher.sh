@@ -56,5 +56,9 @@ echo "Setting wallpaper to $wall_dir/$wall_selection"
 swww img ${wall_dir}/${wall_selection}
 wal -i ${wall_dir}/${wall_selection}
 
+#reload themes
+/home/alimaaz/.config/scripts/hyprcolor.sh
+
+
 exit 0
 
