@@ -29,4 +29,3 @@ rm -f /tmp/.recording_active
 
 # Notify the user that recording is complete
 notify-send "✅ Recording Saved" "File saved as $OUTPUT_FILE"
-

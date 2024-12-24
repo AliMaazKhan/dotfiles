@@ -217,7 +217,7 @@
     "return-type": "json",
     "max-length": 40,
     "format-icons": {
-      "spotify-launcher": "",
+      "spotify": "",
       "default": "🎜"
     },
     "escape": true,
@@ -227,7 +227,7 @@
   "custom/power": {
     "exec": "echo ⏻ ",
     "tooltip": false,
-    "on-click": "$HOME/.config/rofi/powermenu.s"
+    "on-click": "$HOME/.config/rofi/powermenu.sh"
   },
   "custom/date": {
     "exec": "date '+%a, %b %d'",
@@ -297,7 +297,7 @@
   },
   "bluetooth": {
     // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
-    "on-click": "bluetoothctl connected CB:39:FB:71:AF:86",
+    "on-click": "/home/alimaaz/.config/rofi/bluetooth.sh",
     "format": " {status}",
     "format-disabled": "", // an empty format will hide the module
     "format-connected": " {num_connections} connected",
