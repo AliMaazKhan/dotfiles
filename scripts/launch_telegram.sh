@@ -1,3 +1,2 @@
 #!/bin/bash
-
-telegram-desktop
+Telegram

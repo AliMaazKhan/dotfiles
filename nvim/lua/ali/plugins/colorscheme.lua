@@ -36,7 +36,7 @@ return {
 						vim.g.gruvbox_material_visual = "blue background"
 						vim.g.gruvbox_material_ui_contrast = "high"
 						vim.g.gruvbox_material_float_style = "dim"
-						vim.g.gruvbox_material_statusline_style = "original"
+						vim.g.gruvbox_material_statusline_style = "dark"
 					end,
 				},
 				"catppuccin/nvim",

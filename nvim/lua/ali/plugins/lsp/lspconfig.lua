@@ -101,6 +101,7 @@ return {
 					end,
 				})
 			end,
+
 			["graphql"] = function()
 				-- configure graphql language server
 				lspconfig["graphql"].setup({
@@ -108,6 +109,7 @@ return {
 					filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
 				})
 			end,
+
 			["emmet_ls"] = function()
 				-- configure emmet language server
 				lspconfig["emmet_ls"].setup({
@@ -124,15 +126,6 @@ return {
 					},
 				})
 			end,
-
-			require("lspconfig").omnisharp.setup({
-				cmd = {
-					"mono",
-					"--assembly-loader=strict",
-					"/home/alimaaz/.bin/run",
-				},
-				use_mono = false,
-			}),
 
 			["lua_ls"] = function()
 				-- configure lua server (with special settings)

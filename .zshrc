@@ -113,7 +113,7 @@ fi
 #
 #
 # EXPORTS
-export PATH="$PATH:/home/alimaaz/.cargo/bin"
+export PATH="$PATH:/home/batman/.cargo/bin"
 HISTTIMEFORMAT="%d/%m/%y %T "
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -123,3 +123,6 @@ export PATH="/usr/bin/dotnet:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
 export MANPAGER='nvim +Man!'
 
+
+export PATH=$PATH:/home/batman/.spicetify
+export QT_QPA_PLATFORMTHEME="qt6ct"

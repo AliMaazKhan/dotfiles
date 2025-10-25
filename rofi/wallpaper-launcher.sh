@@ -20,7 +20,7 @@
 
 
 # Set some variables
-wall_dir="/home/alimaaz/Pictures/wallpaper"
+wall_dir="/home/batman/Pictures/wallpaper"
 cacheDir="${HOME}/.cache/jp/${theme}"
 rofi_command="rofi -x11 -dmenu -theme ${HOME}/.config/rofi/wallSelect.rasi -theme-str ${rofi_override}"
 
@@ -57,7 +57,7 @@ swww img ${wall_dir}/${wall_selection}
 wal -i ${wall_dir}/${wall_selection}
 
 #reload themes
-/home/alimaaz/.config/scripts/hyprcolor.sh
+/home/batman/.config/scripts/hyprcolor.sh
 
 
 exit 0

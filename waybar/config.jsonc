@@ -23,11 +23,12 @@
     "custom/mediabuttonright"
   ],
   "modules-right": [
+    "custom/brightness",
     "pulseaudio",
     "cpu",
     "memory",
-    "custom/date",
-    "bluetooth",
+ //   "custom/date",
+   // "bluetooth",
     "battery",
     "battery#bat2",
     "clock",
@@ -256,13 +257,13 @@
   },
   "custom/telegram": {
     "exec": "echo '\uf2c6'",
-    "on-click": "/home/alimaaz/.dotfiles/scripts/launch_telegram.sh",
+    "on-click": "/home/batman/.dotfiles/scripts/launch_telegram.sh",
     "interval": 1,
     "format": "{}"
   },
   "custom/youtube": {
     "exec": "echo '\uf16a'",
-    "on-click": "/home/alimaaz/.dotfiles/scripts/youtube_launch.sh",
+    "on-click": "/home/batman/.dotfiles/scripts/youtube_launch.sh",
     "interval": 1,
     "format": "{}"
   },
@@ -297,12 +298,20 @@
   },
   "bluetooth": {
     // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
-    "on-click": "/home/alimaaz/.config/rofi/bluetooth.sh",
+    "on-click": "/home/batman/.config/rofi/bluetooth.sh",
     "format": " {status}",
     "format-disabled": "", // an empty format will hide the module
     "format-connected": " {num_connections} connected",
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+  },
+  "custom/brightness": {
+  "interval": 1,
+  "exec": "/home/batman/.dotfiles/scripts/brightness.sh",
+  "on-scroll-up": "ddcutil setvcp 10 + 2",
+  "on-scroll-down": "ddcutil setvcp 10 - 2",
+  "tooltip": false
   }
 }
+

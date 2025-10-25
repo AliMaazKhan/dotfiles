@@ -16,5 +16,5 @@ if vim.g.neovide then
 	vim.g.neovide_refresh_rate_idle = 5
 	vim.g.neovide_confirm_quit = true
 	vim.g.neovide_cursor_animate_in_insert_mode = true
-	vim.o.guifont = "JetbrainsMono Nerd Font:h14" -- text below applies for VimScript
+	vim.o.guifont = "JetbrainsMono Nerd Font:h12" -- text below applies for VimScript
 end
