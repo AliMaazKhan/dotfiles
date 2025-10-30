@@ -39,14 +39,23 @@ return {
 						vim.g.gruvbox_material_statusline_style = "dark"
 					end,
 				},
-				"catppuccin/nvim",
-				"projekt0n/github-nvim-theme",
+				{
+					"catppuccin/nvim",
+					before = function()
+						require("catppuccin").setup({
+							transparent_background = true,
+						})
+					end,
+				},
+				{
+					"projekt0n/github-nvim-theme",
+				},
 				"joshdick/onedark.vim",
 				"folke/tokyonight.nvim",
 				"Yazeed1s/minimal.nvim",
 				"AlphaTechnolog/pywal.nvim",
-				{ "mhartington/oceanic-next", branch = "main" },
-				{ "Shatur/neovim-ayu", branch = "main" },
+				{ "mhartington/oceanic-next" },
+				{ "Shatur/neovim-ayu" },
 				{
 					"sho-87/kanagawa-paper.nvim",
 					branch = "master",

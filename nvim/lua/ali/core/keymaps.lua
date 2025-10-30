@@ -11,10 +11,10 @@ keymap.set("n", "<leader>s", "<cmd>w<CR>", { desc = "save the current file" })
 keymap.set("n", "<leader>sa", "<cmd>wa<CR>", { desc = "save all the files" })
 
 -- moving code lines
-keymap.set("n", "<A-j>", ":m .+1<CR>==") -- move line up(n)
-keymap.set("n", "<A-k>", ":m .-2<CR>==") -- move line down(n)
-keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv") -- move line up(v)
-keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv") -- move line down(v)
+keymap.set("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line up" }) -- move line up(n)
+keymap.set("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line down" }) -- move line down(n)
+keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move line up(v)" }) -- move line up(v)
+keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move line down(v)" }) -- move line down(v)
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
