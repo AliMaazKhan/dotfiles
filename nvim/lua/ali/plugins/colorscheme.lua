@@ -51,6 +51,7 @@ return {
 					"projekt0n/github-nvim-theme",
 				},
 				"joshdick/onedark.vim",
+				"Mofiqul/vscode.nvim",
 				"folke/tokyonight.nvim",
 				"Yazeed1s/minimal.nvim",
 				"AlphaTechnolog/pywal.nvim",

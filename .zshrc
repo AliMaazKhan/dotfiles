@@ -108,6 +108,10 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias xoff='systemctl --user stop xremap.service'
+alias xon='systemctl --user start xremap.service'
+alias xstat="systemctl --user status xremap.service --no-pager"
+
 #
 #
 #
